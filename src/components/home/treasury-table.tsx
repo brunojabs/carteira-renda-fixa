@@ -63,7 +63,7 @@ export default function TreasuryTable({ items }: { items: TTreasury[] }) {
                 {toCurrency(i.unitPrice)}
               </td>
               <td className="border p-2 text-right">
-                {toPercent(i.annualInvestmentRate)}
+                {toPercent(i.annualInvestmentRate / 100)}
               </td>
               <td className="border p-2 text-right">
                 {toCurrency(i.minimalInvestmentAmount)}
