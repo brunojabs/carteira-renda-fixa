@@ -19,8 +19,11 @@ export const Navbar = async () => {
           {m.app_name()}
         </Link>
         <div className="flex items-center gap-2">
-          {session ? <UserDropdown session={session} /> : <SignInButton />}
-          <LanguageSwitcher />
+          {/* Just hiding before I really need login and language switch */}
+          <div className="hidden">
+            {session ? <UserDropdown session={session} /> : <SignInButton />}
+            <LanguageSwitcher />
+          </div>
 
           <ThemeSwitcher />
         </div>
