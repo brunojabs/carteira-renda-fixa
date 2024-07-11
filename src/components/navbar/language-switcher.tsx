@@ -15,8 +15,7 @@ import {
 } from '@/paraglide/runtime';
 
 const LanguageLabel: Record<AvailableLanguageTag, string> = {
-  en: 'English',
-  pl: 'Polski',
+  'pt-BR': 'English',
 };
 
 export const LanguageSwitcher = () => {
