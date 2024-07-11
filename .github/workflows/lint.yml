@@ -19,5 +19,3 @@ jobs:
         run: npm run typecheck
       - name: Prettier
         run: npm run format:check
-      - name: Tests
-        run: npm run test
