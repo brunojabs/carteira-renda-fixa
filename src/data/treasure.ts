@@ -165,6 +165,7 @@ export const getBonds = async (): Promise<TTreasury[]> => {
     await res.json()
   ).response.TrsrBdTradgList.map((i) => ({
     name: i.TrsrBd.nm,
+    description: i.TrsrBd.featrs,
     annualInvestmentRate: i.TrsrBd.anulInvstmtRate,
     unitPrice: i.TrsrBd.untrInvstmtVal,
     minimalInvestmentAmount: i.TrsrBd.minInvstmtAmt,
